@@ -34,7 +34,7 @@ body {
 }
 
 .instagram-phone img {
-	height: 635px;
+	height: 535px;
 }
 
 .instagram-continue {
@@ -118,13 +118,13 @@ body {
 
  /*MIDIA QUERY*/
 
- @media (max-width: 1024px) {
+ @media (max-width: 1050px) {
  	.instagram-content:{
  		width: 90%;	
  	}
  	.instagram-phone img {
-		width: 100%;
-		height: 100%;
+		width: 90%;
+		height: 90%;
 		margin-left: -10px;
 }
 

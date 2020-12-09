@@ -31,7 +31,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 50%;
-	margin-right: -50px;
 }
 
 .instagram-phone img {
@@ -50,34 +49,25 @@ body {
 .instagram-login {
 	color: white;
 }
-#signup {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: column;
-	background-color: #ffffff;
-	width: 350px;
-	height: 70px;
-	padding: 2.3rem;
-	border: 1px solid lightgray;
-	margin-top: 10px;
-}
+
 .group {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: column;
 	background-color: #ffffff;
-	width: 350px;
-	height: 350px;
+	width: 100%;
 	padding: 2.3rem;
 	border: 1px solid lightgray;
 }
 
+.group:nth-child(2) {
+	margin-top: 10px;
+}
 .group button {
 	height: 31px;
     border-radius: 6px;
-    background: #0095F6;
+	background-color: #0095f6;
     padding: 5px;
     font-weight: 600;
     width: 250px;
@@ -106,18 +96,26 @@ span.link-blue  {
 	margin-top: 20px;
 }
 
-.get-app {
-	text-align: center;
-	margin-top: 20px;
-}
-.download {
-	width: 100%;
-	display: flex;
-}
-.app-download img {
-	width: 150px;
+ .get-the-app {
+ 	display: flex;
+ 	flex-direction: column;
+ 	align-items: center;
+ 	justify-content: center;
+ 	width: 100%;
+ }
+ .get-app {
+ 	margin-top: 10px;
+ }
 
-}
+ .download {
+ 	display: flex;
+ 	width: 100%;
+ 	align-items: center;
+ }
+
+ .app-download img {
+ 	width: 100%;
+ }
 
 /*CADASTRAR*/
 #cadastrar {
@@ -135,7 +133,7 @@ span.link-blue  {
 #cadastrar button {
 	height: 31px;
     border-radius: 6px;
-    background: #c5ecfe;
+    background: #0095f6;
     padding: 5px;
     font-weight: 600;
     width: 300px;
@@ -144,6 +142,7 @@ span.link-blue  {
     margin-top: 20px;
     border: none;
     color: white;
+    cursor: pointer;
 }
 #cadastrar hr {
 	width: 100px;
