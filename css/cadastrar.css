@@ -21,15 +21,16 @@ body {
 .instagram-content {
 	display: flex; /*Posicionamento horizontal um ao lado do outro*/
 	align-items: center; /*Alinhamento Vertical*/
-	justify-content: start; /*Alinhamento Horizontal*/
-	width: 60%;
-	height: 100vh;
+	justify-content: center; /*Alinhamento Horizontal*/
+	width: 50%; /*Largura da Div*/
+	height: 100vh; /*Altura da Div*/
+	margin-top: 4%;
 }
 
 .instagram-phone {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	display: flex; /*Posicionamento dos itens flex - um ao lado do outro*/
+	align-items: center; /*Alinhamentos dos itens da div no centro*/
+	justify-content: center; /*Alinamento horizontal*/
 	width: 50%;
 }
 
@@ -119,13 +120,16 @@ span.link-blue  {
 
 /*CADASTRAR*/
 #cadastrar {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	width: 300px;
 }
 #cadastrar input {
-	width: 300px;
+	width: 250px;
 	height: 30px;
 	border-radius: 1px;
-	margin-top: 5px;
+	margin: 10px auto; /*Centralizar o input na div o primeiro valor é a margem do topo*/
 	text-align: center;
 	border: 1px solid #E8E9E9;
 	display: block;
@@ -136,18 +140,41 @@ span.link-blue  {
     background: #0095f6;
     padding: 5px;
     font-weight: 600;
-    width: 300px;
+    width: 250px;
     font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    margin-top: 20px;
+    margin: 20px auto;
+    display: block; /*Faz com que o botão ocupe todo os espaço disponivel na linha como um bloco*/
     border: none;
     color: white;
     cursor: pointer;
 }
-#cadastrar hr {
-	width: 100px;
-	display: flex;
-	margin-top: 10px;
-    background: #c5ecfe;
+#cadastrar span {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #929799;
+    width: 250px;
+}
+#cadastrar h2 {
+	font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: block;
+    margin: auto;
+    text-align: center;
+    color: #929799;
+    width: 200px;
+}
 
+@media(max-width: 1024px) {
+	#cadastrar input {
+		width: 70%;
+	}
+	#cadastrar button {
+		width: 70%;
+	}
+	.instagram-content {
+		margin-top: 4%;
+	}
 }
